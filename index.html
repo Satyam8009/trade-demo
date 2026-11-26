@@ -11,19 +11,27 @@
       height: 100%; 
       overflow: hidden; 
       background: #000; 
-      position: relative; 
     }
     iframe { 
       width: 100%; 
-      height: 105%; 
+      height: 100%; 
       border: none; 
-      position: absolute; 
-      top: -25px; 
-      left: 0; 
+    }
+    /* Yeh overlay code bottom-right corner ke badge ko poori tarah chhupa dega */
+    .badge-cover {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 110px;
+      height: 45px;
+      background: #111111;
+      z-index: 999999;
+      pointer-events: none;
     }
   </style>
 </head>
 <body>
   <iframe src="https://app-g1wczosbvzep.appmedo.com"></iframe>
+  <div class="badge-cover"></div>
 </body>
 </html>
