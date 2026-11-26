@@ -3,35 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TradePro - Live Market Demo</title>
+  <title>Nivesh Markets - Trading Platform</title>
   <style>
     body, html { 
       margin: 0; 
       padding: 0; 
       height: 100%; 
       overflow: hidden; 
-      background: #000; 
+      background: #0f172a; 
     }
     iframe { 
       width: 100%; 
       height: 100%; 
       border: none; 
     }
-    /* Yeh overlay code bottom-right corner ke badge ko poori tarah chhupa dega */
-    .badge-cover {
+    /* Yeh ekdum professional modern floating support/help pill button hai jo watermark ko chhupa dega */
+    .pro-badge-mask {
       position: fixed;
-      bottom: 0;
-      right: 0;
-      width: 110px;
-      height: 45px;
-      background: #111111;
+      bottom: 12px;
+      right: 12px;
+      background: linear-gradient(135deg, #059669, #10b981);
+      color: white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+      display: flex;
+      align-items: center;
+      gap: 6px;
       z-index: 999999;
       pointer-events: none;
+      letter-spacing: 0.3px;
+    }
+    .pro-badge-mask span {
+      width: 6px;
+      height: 6px;
+      background: #ffffff;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.2); opacity: 1; }
     }
   </style>
 </head>
 <body>
   <iframe src="https://app-g1wczosbvzep.appmedo.com"></iframe>
-  <div class="badge-cover"></div>
+  
+  <!-- Yeh professional button watermark ko mask kar dega -->
+  <div class="pro-badge-mask">
+    <span></span> Support Active
+  </div>
 </body>
 </html>
